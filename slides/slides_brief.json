@@ -1,0 +1,87 @@
+{
+  "design": {
+    "title": "RepoRevive — IBM Bob 2.0 Hackathon Pitch Deck",
+    "style_name": "Steel-blue engineering minimal",
+    "palette": { "background": "#f7f8f8", "primary": "#131515", "accent": "#1f6c92" },
+    "typography": { "heading": "Inter", "body": "Inter", "numeric": "JetBrains Mono" },
+    "reference": "IBM Carbon-inspired engineering minimalism — whitespace, hairlines, mono data chips"
+  },
+  "global_css_path": "/home/z/my-project/download/slides/global.css",
+  "slides_dir": "/home/z/my-project/download/slides",
+  "language": "en",
+  "speaker_notes": "none",
+  "slides": [
+    {
+      "title": "Cover",
+      "layout": "cover",
+      "output_path": "/home/z/my-project/download/slides/slide_01.html",
+      "task_brief": "Cover slide, generous whitespace, thin 1px inset frame (line #acbdc5) at 22px. Top-left kicker (mono, uppercase): 'IBM BOB 2.0 HACKATHON · LABLAB.AI · SEPTEMBER 2026'. Hero display (Inter 900, ink, ~76px, three lines): 'RepoRevive:' / 'Legacy Code,' / 'Revived.' — make the word 'Revived.' accent color #1f6c92. 3px accent rule above hero. Sub-copy (max width 560px, muted-2): 'AI-guided health audit and renovation for legacy repositories — a multi-agent pipeline that scores, plans, and fixes real code.' Bottom meta drawer (mono, small, three items separated by thin vertical hairlines): 'AUDIT → PLAN → RENOVATE' | 'HEALTH SCORE 0–100' | '4 AGENTS · ONE TEAM'. No image."
+    },
+    {
+      "title": "The Problem",
+      "layout": "stats grid",
+      "output_path": "/home/z/my-project/download/slides/slide_02.html",
+      "task_brief": "Kicker: 'THE PROBLEM'. Headline (h1): 'Legacy code is where velocity goes to die.' Sub-line (muted): 'Most of the world's software is legacy. Nobody knows which files are safe to touch — so teams freeze, rewrite, or gamble.' Grid of 4 white cards (top-tick accent border), each with a big mono stat line + short label + one-line detail: 1) stat 'WEEKS' label 'To onboard' detail 'onto an unfamiliar repository'; 2) stat '0%' label 'Test coverage' detail 'in much of the code you inherit'; 3) stat 'HIDDEN' label 'CVEs' detail 'inside outdated dependency trees'; 4) stat 'NOISE' label 'Static tools' detail 'dump warnings — not fixes'. Render stat in mono ~34px, first stat card's stat in accent color."
+    },
+    {
+      "title": "The Solution — Three Phases",
+      "layout": "numbered cards",
+      "output_path": "/home/z/my-project/download/slides/slide_03.html",
+      "task_brief": "Kicker: 'THE SOLUTION'. Headline: 'Three orchestrated phases. One live health score.' Three equal white cards left-to-right, each with a large mono numeral in accent (01 / 02 / 03), a Material icon (search, format_list_numbered, build), a bold card title, and 2-sentence body: 01 'AUDIT' — 'The Inspector agent scans the full repository and produces a 0–100 health score, an architecture diagram, and a risk heatmap.' 02 'PLAN' — 'The Architect agent converts findings into a prioritized, dependency-ordered backlog where every task carries acceptance criteria.' 03 'RENOVATE' — 'The Executor completes tasks one by one, the Validator reviews every change, and the score climbs live.' Footer strip (panel bg, full width): 'Paste a GitHub URL — watch the score climb.' with mono styling on 'GitHub URL'."
+    },
+    {
+      "title": "Phase 1 — Audit",
+      "layout": "split text+image",
+      "output_path": "/home/z/my-project/download/slides/slide_04.html",
+      "task_brief": "Split layout: LEFT ~44%: kicker 'PHASE 1 · AUDIT', headline 'The Inspector agent scores everything.', body paragraph: 'Tree-sitter AST parsing, dependency scanning, coverage and complexity metrics, documentation checks — merged by Bob 2.0 into structured JSON findings that feed a transparent six-dimension scoring engine.' Then 3 chips (mono): '0–100 SCORE' / 'RISK HEATMAP' / 'ARCH DIAGRAM'. RIGHT ~56%: white card with 1px border containing the LOCAL SIBLING image embedded as <img src=\"weights.png\" style=\"width:100%; display:block\"> (image lives in the same folder — use relative src exactly). Small muted caption under the image inside the card: 'Six weighted dimensions drive the health score.'"
+    },
+    {
+      "title": "Phase 2 — Renovation Plan",
+      "layout": "split text+cards",
+      "output_path": "/home/z/my-project/download/slides/slide_05.html",
+      "task_brief": "Kicker: 'PHASE 2 · RENOVATION PLAN'. Headline: 'The Architect agent turns findings into a build order.' Intro body (max 620px): 'Every task is small, verifiable, and dependency-ordered — with rationale, affected files, and acceptance criteria. Approve, reorder, or descope from the dashboard. Renovation never becomes a rewrite.' Then 3 stacked backlog row cards, each row: mono task id (accent) + bold title + right-aligned mono chips: ROW1 id 'T-014' title 'Add integration tests for auth middleware' chips '+6 PTS' (accent chip) · '2 FILES' · 'AC: COVERAGE ≥ 80%'. ROW2 id 'T-015' title 'Upgrade express 4.17 → 4.21' chips '+4 PTS' · '1 FILE' · 'AC: ROUTES PASS'. ROW3 id 'T-016' title 'Extract config loader from monolith' chips '+3 PTS' · '4 FILES' · 'AC: IMPORTS CLEAN'. Use mono font for all ids and chips."
+    },
+    {
+      "title": "Phase 3 — Guided Renovation",
+      "layout": "progression strip",
+      "output_path": "/home/z/my-project/download/slides/slide_06.html",
+      "task_brief": "Kicker: 'PHASE 3 · GUIDED RENOVATION'. Headline: 'Watch the score climb with every verified fix.' Body paragraph: 'The Executor lands one task at a time, running builds and tests through its shell. The Validator reviews each diff before commit, and the health score recomputes after every merge — progress you can measure, not guess.' Center visual: 5 white cards in a horizontal strip, each with a large mono score number, separated by Material icon 'arrow_forward' (muted): 58 → 64 → 71 → 78 → 85. Make the final '85' accent color and larger. Small muted caption centered under the strip: 'Health score across five merged tasks'. Bottom row of 3 chips: 'EXECUTOR' / 'VALIDATOR' / 'LIVE ACTIVITY FEED'."
+    },
+    {
+      "title": "System Architecture",
+      "layout": "full-bleed image",
+      "output_path": "/home/z/my-project/download/slides/slide_07.html",
+      "task_brief": "Kicker: 'SYSTEM ARCHITECTURE'. Headline: 'From GitHub URL to live dashboard — Bob at the hub.' Main visual: white card with 1px border holding the LOCAL SIBLING image embedded as <img src=\"diagram.png\" style=\"width:100%; display:block\"> (image lives in the same folder — use relative src exactly); give the card ~470px height and center it. Caption line under the card (small, muted, centered): 'Ingest → analyze → orchestrate → score → serve. IBM Bob 2.0 coordinates Inspector, Architect, Executor and Validator.'"
+    },
+    {
+      "title": "Powered by Bob 2.0",
+      "layout": "bento grid",
+      "output_path": "/home/z/my-project/download/slides/slide_08.html",
+      "task_brief": "Kicker: 'WHY BOB 2.0'. Headline: 'Bob 2.0 is the orchestration core — not a chat sidebar.' 2x2 bento grid of white cards, each with a Material icon (hub, account_tree, description, terminal), a bold Bob-capability title, and one product-mapping line: 1) 'Agent Mode + Full-Repo Context' — 'The Inspector reasons over the whole codebase, not isolated snippets.' 2) 'Parallel Subagents' — 'Dependency, complexity and documentation audits run simultaneously.' 3) 'Document Understanding' — 'Reads READMEs, lockfiles and CI configs as evidence.' 4) 'Shell & Tool Use' — 'The Executor runs builds and tests; the Validator reviews diffs.' Footer strip (panel bg): 'Inspector · Architect · Executor · Validator — one orchestrated agent team.'"
+    },
+    {
+      "title": "Business Value",
+      "layout": "two-column",
+      "output_path": "/home/z/my-project/download/slides/slide_09.html",
+      "task_brief": "Kicker: 'BUSINESS VALUE'. Headline: 'Maintenance is a cost center. Make it a pipeline.' Two columns separated by a vertical hairline. LEFT column header (mono, small, muted): 'WHO IT SERVES' — 4 rows each with a Material icon (groups, business, volunteer_activism, person_add) + text: 'Enterprise maintenance teams buried in legacy services' / 'Agencies inheriting client codebases' / 'Open-source maintainers drowning in issues' / 'New hires onboarding onto unfamiliar repos'. RIGHT column header: 'WHAT IT RETURNS' — 4 rows each with Material icon (timer, trending_up, fact_check, monitoring) + text: 'Minutes of automated audit replacing weeks of archaeology' / 'Score points per task — ROI attached to every fix' / 'Verified, test-backed changes instead of vibes' / 'A health baseline you can monitor continuously'. Right column icons in accent color."
+    },
+    {
+      "title": "Live Demo Flow",
+      "layout": "3-beat row",
+      "output_path": "/home/z/my-project/download/slides/slide_10.html",
+      "task_brief": "Kicker: 'LIVE DEMO'. Headline: 'What you are about to see.' Three horizontal white cards, each with a huge mono numeral (1 / 2 / 3, accent) and body text: 1) 'Paste a real GitHub URL — the Inspector audits it live; the activity feed and risk heatmap render as agents work.' 2) 'The Architect proposes the plan — we approve a task with one click.' 3) 'The Executor lands the fix — the health score climbs on screen, in real time.' Footer line (small, muted, centered): 'Every recommendation is traceable to specific code evidence.'"
+    },
+    {
+      "title": "48-Hour Execution Plan",
+      "layout": "numbered rows",
+      "output_path": "/home/z/my-project/download/slides/slide_11.html",
+      "task_brief": "Kicker: 'EXECUTION'. Headline: '48 hours, four builders, one loop.' Six rows separated by 1px hairlines, each row = mono time chip (accent border, fixed width) + body text: 'FRI 15:00' — 'Scaffold repo, GitHub ingestion, Bob agent harness'; 'FRI 20:00' — 'Scoring engine + risk heatmap shipped'; 'SAT AM' — 'Inspector and Architect wired into the dashboard'; 'SAT 20:00' — 'Executor + Validator renovation loop closes'; 'SUN 06:00' — 'End-to-end demo passes on real repositories'; 'SUN 12:00' — 'Video, deck and submission — 3-hour buffer'. Rows compact so all six fit with breathing room; last row chip in accent-2 #c23a50 to mark the buffer."
+    },
+    {
+      "title": "Closing",
+      "layout": "closing",
+      "output_path": "/home/z/my-project/download/slides/slide_12.html",
+      "task_brief": "Bookend closing, mirrors cover: thin 1px inset frame at 22px, centered composition. Hero (Inter 900, ~64px): 'RepoRevive.' on line one, 'Legacy code, revived.' on line two with 'revived.' in accent color. Sub (muted): 'Built with IBM Bob 2.0 at the lablab.ai Bob 2.0 Hackathon — September 2026.' Meta row (mono, small, two items separated by a hairline): 'PUBLIC REPO — SEE PER-MEMBER BOB SESSION SCREENSHOTS' | 'DEMO — LINK IN SUBMISSION'. Bottom small thanks line (muted): 'Team RepoRevive — four builders, forty-eight hours.' No image."
+    }
+  ]
+}

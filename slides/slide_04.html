@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>RepoRevive — Phase 1 · Audit</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="global.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  .chip-mono {
+    font-family: var(--font-num); font-size: 11.5px; font-weight: 600;
+    letter-spacing: 0.1em; color: var(--muted-2);
+  }
+  .chip-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 1px; flex: none; }
+</style>
+</head>
+<body>
+<div class="slide" style="padding:64px 72px; display:flex; align-items:center; gap:48px;">
+
+  <!-- LEFT · narrative -->
+  <div style="flex:0 0 478px;">
+    <div class="kicker">PHASE 1 · AUDIT</div>
+    <h1 style="margin:18px 0 0; font-family:var(--font-heading); font-size:38px; font-weight:800; letter-spacing:-0.015em; line-height:1.18; color:var(--ink);">The Inspector agent scores everything.</h1>
+    <p style="margin:22px 0 0; font-size:15.5px; line-height:1.65; color:var(--muted-2);">Tree-sitter AST parsing, dependency scanning, coverage and complexity metrics, documentation checks — merged by Bob 2.0 into structured JSON findings that feed a transparent six-dimension scoring engine.</p>
+    <div style="margin-top:30px; display:flex; flex-wrap:wrap; gap:10px;">
+      <span class="chip chip-mono"><span class="chip-dot" data-decor aria-hidden="true"></span>0–100 SCORE</span>
+      <span class="chip chip-mono"><span class="chip-dot" data-decor aria-hidden="true"></span>RISK HEATMAP</span>
+      <span class="chip chip-mono"><span class="chip-dot" data-decor aria-hidden="true"></span>ARCH DIAGRAM</span>
+    </div>
+  </div>
+
+  <!-- RIGHT · weights chart card -->
+  <div style="flex:1; min-width:0;">
+    <div class="card" style="padding:20px;">
+      <img src="weights.png" style="width:100%; display:block; border-radius:6px;" alt="Bar chart of the six scoring dimension weights">
+      <div style="margin-top:14px; border-top:1px solid var(--line); padding-top:12px; font-size:13px; line-height:1.5; color:var(--muted-2);">Six weighted dimensions drive the health score.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

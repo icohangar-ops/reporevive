@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Powered by Bob 2.0</title>
+<link rel="stylesheet" href="global.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  body { margin: 0; background: var(--bg); }
+  .headline {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h1);
+    font-weight: 800;
+    line-height: 1.14;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  .bento-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 26px 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .icon-box {
+    width: 48px;
+    height: 48px;
+    flex: none;
+    background: var(--panel);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-box .material-icons {
+    font-size: 26px;
+    color: var(--accent);
+  }
+  .card-title {
+    font-size: var(--fs-h3);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  .card-body {
+    font-size: var(--fs-body);
+    line-height: 1.55;
+    color: var(--muted-2);
+    margin-top: 7px;
+  }
+  .footer-name {
+    font-family: var(--font-num);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+  }
+  .footer-dot {
+    color: var(--muted);
+    margin: 0 10px;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="h-full w-full flex flex-col" style="padding: 60px 64px 56px;">
+
+    <!-- Header -->
+    <div>
+      <div class="kicker">WHY BOB 2.0</div>
+      <h1 class="headline" style="margin: 12px 0 0;">Bob 2.0 is the orchestration core — not a chat sidebar.</h1>
+    </div>
+
+    <!-- 2x2 bento grid -->
+    <div class="flex-1 grid grid-cols-2" style="gap: 18px; margin-top: 28px;">
+
+      <div class="bento-card">
+        <div class="icon-box"><span class="material-icons" aria-hidden="true">hub</span></div>
+        <div>
+          <div class="card-title">Agent Mode + Full-Repo Context</div>
+          <div class="card-body">The Inspector reasons over the whole codebase, not isolated snippets.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="icon-box"><span class="material-icons" aria-hidden="true">account_tree</span></div>
+        <div>
+          <div class="card-title">Parallel Subagents</div>
+          <div class="card-body">Dependency, complexity and documentation audits run simultaneously.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="icon-box"><span class="material-icons" aria-hidden="true">description</span></div>
+        <div>
+          <div class="card-title">Document Understanding</div>
+          <div class="card-body">Reads READMEs, lockfiles and CI configs as evidence.</div>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <div class="icon-box"><span class="material-icons" aria-hidden="true">terminal</span></div>
+        <div>
+          <div class="card-title">Shell &amp; Tool Use</div>
+          <div class="card-body">The Executor runs builds and tests; the Validator reviews diffs.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer strip -->
+    <div class="panel flex items-center justify-center" style="height: 58px; margin-top: 24px; flex: none;">
+      <div style="font-size: var(--fs-small); color: var(--muted-2);">
+        <span class="footer-name">Inspector</span><span class="footer-dot">·</span><span class="footer-name">Architect</span><span class="footer-dot">·</span><span class="footer-name">Executor</span><span class="footer-dot">·</span><span class="footer-name">Validator</span>
+        <span>&nbsp;— one orchestrated agent team.</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

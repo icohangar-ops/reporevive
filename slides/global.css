@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+:root {
+  /* ── Palette · steel-blue engineering minimal ───────────────── */
+  --bg: #f7f8f8;
+  --panel: #eef3f6;
+  --panel-2: #e8edf0;
+  --ink: #131515;
+  --primary: #32454e;
+  --accent: #1f6c92;
+  --accent-2: #c23a50;
+  --muted: #747b7e;
+  --muted-2: #4a5357;
+  --line: #acbdc5;
+  --white: #ffffff;
+
+  /* ── Typography tokens (tokens only — no pre-baked classes) ── */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-num: 'JetBrains Mono', monospace;
+
+  --fs-display: 58px;
+  --fs-h1: 40px;
+  --fs-h2: 25px;
+  --fs-h3: 18px;
+  --fs-body: 15.5px;
+  --fs-small: 13px;
+  --fs-micro: 10.5px;
+}
+
+/* ── Slide canvas ─────────────────────────────────────────────── */
+.slide {
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+  position: relative;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+/* ── Reusable surfaces (non-typographic) ─────────────────────── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.panel {
+  background: var(--panel);
+  border-radius: 12px;
+}
+.frame-inset {
+  position: absolute;
+  inset: 22px;
+  border: 1px solid var(--line);
+  pointer-events: none;
+}
+.accent-rule {
+  height: 3px;
+  background: var(--accent);
+}
+.top-tick {
+  border-top: 3px solid var(--accent);
+}
+.hairline {
+  border-bottom: 1px solid var(--line);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+}
+.kicker {
+  font-family: var(--font-num);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
+.mono {
+  font-family: var(--font-num);
+}
+.accent-text {
+  color: var(--accent);
+}
+.muted-text {
+  color: var(--muted);
+}

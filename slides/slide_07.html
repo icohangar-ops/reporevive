@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>System Architecture</title>
+<link rel="stylesheet" href="global.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  body { margin: 0; background: var(--bg); }
+  .headline {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h1);
+    font-weight: 800;
+    line-height: 1.14;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="h-full w-full flex flex-col" style="padding: 56px 64px;">
+
+    <!-- Header -->
+    <div>
+      <div class="kicker">SYSTEM ARCHITECTURE</div>
+      <h1 class="headline" style="margin: 12px 0 0;">From GitHub URL to live dashboard — Bob at the hub.</h1>
+    </div>
+
+    <!-- Main visual: diagram card -->
+    <div class="flex-1 flex items-center justify-center">
+      <div class="card" style="width: 1128px; padding: 24px;">
+        <img src="diagram.png" alt="RepoRevive system architecture — Bob 2.0 at the hub of Inspector, Architect, Executor and Validator" style="width: 100%; display: block;">
+      </div>
+    </div>
+
+    <!-- Caption -->
+    <div class="text-center" style="font-size: var(--fs-small); color: var(--muted-2); margin-top: 8px;">
+      <span class="mono" style="font-weight: 600; color: var(--ink);">Ingest → analyze → orchestrate → score → serve.</span>
+      IBM Bob 2.0 coordinates Inspector, Architect, Executor and Validator.
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

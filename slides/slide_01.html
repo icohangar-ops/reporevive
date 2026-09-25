@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>RepoRevive — Cover</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="global.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  .cross {
+    position: absolute; width: 19px; height: 19px;
+    font-family: var(--font-num); font-size: 18px; line-height: 19px;
+    color: var(--line); text-align: center; transform: translate(-50%, -50%);
+  }
+  .hero {
+    margin: 0;
+    font-family: var(--font-heading); font-weight: 900;
+    font-size: 76px; line-height: 1.05; letter-spacing: -0.025em;
+    color: var(--ink);
+  }
+  .meta-item {
+    font-family: var(--font-num); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.12em; color: var(--muted-2); white-space: nowrap;
+  }
+  .meta-div { width: 1px; height: 18px; background: var(--line); flex: none; }
+  .step { height: 2px; background: var(--line); opacity: 0.55; flex: none; }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <!-- decorative inset frame + corner registration marks -->
+  <div class="frame-inset" data-decor aria-hidden="true"></div>
+  <div class="cross" style="left:22px; top:22px;" data-decor aria-hidden="true">+</div>
+  <div class="cross" style="left:1258px; top:22px;" data-decor aria-hidden="true">+</div>
+  <div class="cross" style="left:22px; top:698px;" data-decor aria-hidden="true">+</div>
+  <div class="cross" style="left:1258px; top:698px;" data-decor aria-hidden="true">+</div>
+
+  <!-- decorative score-scale steps, right side -->
+  <div data-decor aria-hidden="true" style="position:absolute; right:78px; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; align-items:flex-end; gap:9px;">
+    <div class="step" style="width:34px;"></div>
+    <div class="step" style="width:46px;"></div>
+    <div class="step" style="width:58px;"></div>
+    <div class="step" style="width:70px;"></div>
+    <div class="step" style="width:82px;"></div>
+    <div class="step" style="width:94px;"></div>
+    <div class="step" style="width:106px;"></div>
+    <div class="step" style="width:118px;"></div>
+    <div class="step" style="width:130px;"></div>
+    <div class="step" style="width:142px; background:var(--accent); opacity:1; height:3px;"></div>
+    <div class="step" style="width:154px;"></div>
+    <div class="step" style="width:166px;"></div>
+  </div>
+
+  <div style="position:absolute; inset:0; padding:66px 78px 62px; display:flex; flex-direction:column; justify-content:space-between;">
+
+    <!-- top kicker -->
+    <div class="kicker" style="font-size:11.5px; letter-spacing:0.22em;">IBM BOB 2.0 HACKATHON · LABLAB.AI · SEPTEMBER 2026</div>
+
+    <!-- hero block -->
+    <div>
+      <div class="accent-rule" style="width:92px; margin-bottom:36px;"></div>
+      <h1 class="hero">RepoRevive:<br>Legacy Code,<br><span style="color:var(--accent);">Revived.</span></h1>
+      <p style="max-width:560px; margin:30px 0 0; font-size:17px; line-height:1.65; color:var(--muted-2);">AI-guided health audit and renovation for legacy repositories — a multi-agent pipeline that scores, plans, and fixes real code.</p>
+    </div>
+
+    <!-- bottom meta drawer -->
+    <div style="display:flex; align-items:center; gap:26px;">
+      <span class="meta-item">AUDIT <span style="color:var(--accent);">→</span> PLAN <span style="color:var(--accent);">→</span> RENOVATE</span>
+      <span class="meta-div" data-decor aria-hidden="true"></span>
+      <span class="meta-item">HEALTH SCORE 0–100</span>
+      <span class="meta-div" data-decor aria-hidden="true"></span>
+      <span class="meta-item">4 AGENTS · ONE TEAM</span>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

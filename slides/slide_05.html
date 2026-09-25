@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phase 2 — Renovation Plan</title>
+<link rel="stylesheet" href="global.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  body { margin: 0; background: var(--bg); }
+  .headline {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h1);
+    font-weight: 800;
+    line-height: 1.14;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  .row-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
+  .chip-mono {
+    font-family: var(--font-num);
+    font-size: var(--fs-micro);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    border-radius: 999px;
+    padding: 6px 14px;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="h-full w-full flex flex-col" style="padding: 64px 64px 60px;">
+
+    <!-- Header: headline left, intro right -->
+    <div class="flex items-end justify-between" style="gap: 56px;">
+      <div style="max-width: 500px;">
+        <div class="kicker">PHASE 2 · RENOVATION PLAN</div>
+        <h1 class="headline" style="margin: 12px 0 0;">The Architect agent turns findings into a build order.</h1>
+      </div>
+      <p style="width: 620px; flex: none; margin: 0 0 4px; font-size: var(--fs-body); line-height: 1.6; color: var(--muted-2);">
+        Every task is small, verifiable, and dependency-ordered — with rationale, affected files, and acceptance criteria. Approve, reorder, or descope from the dashboard. Renovation never becomes a rewrite.
+      </p>
+    </div>
+
+    <!-- Backlog rows -->
+    <div class="flex-1 flex flex-col justify-center" style="gap: 20px; margin-top: 28px;">
+
+      <!-- ROW 1 -->
+      <div class="row-card flex items-center" style="height: 106px; padding: 0 28px; gap: 22px;">
+        <div class="mono" style="font-size: var(--fs-h3); font-weight: 700; color: var(--accent); width: 84px; flex: none;">T-014</div>
+        <div style="width: 1px; height: 46px; background: var(--line); flex: none;"></div>
+        <div style="font-size: var(--fs-h3); font-weight: 700; color: var(--ink); line-height: 1.3;">Add integration tests for auth middleware</div>
+        <div class="flex-1"></div>
+        <div class="flex items-center" style="gap: 10px;">
+          <span class="chip-mono" style="background: var(--accent); color: var(--white); border: 1px solid var(--accent);">+6 PTS</span>
+          <span class="chip-mono" style="background: var(--white); color: var(--muted-2); border: 1px solid var(--line);">2 FILES</span>
+          <span class="chip-mono" style="background: var(--white); color: var(--muted-2); border: 1px solid var(--line);">AC: COVERAGE ≥ 80%</span>
+        </div>
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="row-card flex items-center" style="height: 106px; padding: 0 28px; gap: 22px;">
+        <div class="mono" style="font-size: var(--fs-h3); font-weight: 700; color: var(--accent); width: 84px; flex: none;">T-015</div>
+        <div style="width: 1px; height: 46px; background: var(--line); flex: none;"></div>
+        <div style="font-size: var(--fs-h3); font-weight: 700; color: var(--ink); line-height: 1.3;">Upgrade express 4.17 → 4.21</div>
+        <div class="flex-1"></div>
+        <div class="flex items-center" style="gap: 10px;">
+          <span class="chip-mono" style="background: var(--white); color: var(--muted-2); border: 1px solid var(--line);">+4 PTS</span>
+          <span class="chip-mono" style="background: var(--white); color: var(--muted-2); border: 1px solid var(--line);">1 FILE</span>
+          <span class="chip-mono" style="background: var(--white); color: var(--muted-2); border: 1px solid var(--line);">AC: ROUTES PASS</span>
+        </div>
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="row-card flex items-center" style="height: 106px; padding: 0 28px; gap: 22px;">
+        <div class="mono" style="font-size: var(--fs-h3); font-weight: 700; color: var(--accent); width: 84px; flex: none;">T-016</div>
+        <div style="width: 1px; height: 46px; background: var(--line); flex: none;"></div>
+        <div style="font-size: var(--fs-h3); font-weight: 700; color: var(--ink); line-height: 1.3;">Extract config loader from monolith</div>
+        <div class="flex-1"></div>
+        <div class="flex items-center" style="gap: 10px;">
+          <span class="chip-mono" style="background: var(--white); color: var(--muted-2); border: 1px solid var(--line);">+3 PTS</span>
+          <span class="chip-mono" style="background: var(--white); color: var(--muted-2); border: 1px solid var(--line);">4 FILES</span>
+          <span class="chip-mono" style="background: var(--white); color: var(--muted-2); border: 1px solid var(--line);">AC: IMPORTS CLEAN</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

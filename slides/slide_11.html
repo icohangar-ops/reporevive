@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 11 — 48-Hour Execution Plan</title>
+<link rel="stylesheet" href="global.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  * { box-sizing: border-box; }
+  .plan-row { display: flex; align-items: center; gap: 30px; flex: 1; min-height: 0; }
+  .plan-row + .plan-row { border-top: 1px solid var(--line); }
+  .time-chip {
+    flex: 0 0 152px;
+    width: 152px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--accent);
+    border-radius: 999px;
+    color: var(--accent);
+    font-family: var(--font-num);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+  .time-chip.buffer { border-color: var(--accent-2); color: var(--accent-2); }
+  .plan-text { font-size: 17px; font-weight: 500; color: var(--ink); line-height: 1.4; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div style="position:absolute; inset:0; display:flex; flex-direction:column; padding:62px 72px 56px;">
+
+    <!-- Header -->
+    <div class="kicker">EXECUTION</div>
+    <h1 style="margin:14px 0 0; font-family:var(--font-heading); font-size:var(--fs-h1); font-weight:800; letter-spacing:-0.015em; line-height:1.1; color:var(--ink);">
+      48 hours, four builders, one loop.
+    </h1>
+
+    <!-- Six hairline-separated rows -->
+    <div style="flex:1; display:flex; flex-direction:column; margin-top:34px; min-height:0;">
+
+      <div class="plan-row">
+        <span class="time-chip">FRI 15:00</span>
+        <span class="plan-text">Scaffold repo, GitHub ingestion, Bob agent harness</span>
+      </div>
+
+      <div class="plan-row">
+        <span class="time-chip">FRI 20:00</span>
+        <span class="plan-text">Scoring engine + risk heatmap shipped</span>
+      </div>
+
+      <div class="plan-row">
+        <span class="time-chip">SAT AM</span>
+        <span class="plan-text">Inspector and Architect wired into the dashboard</span>
+      </div>
+
+      <div class="plan-row">
+        <span class="time-chip">SAT 20:00</span>
+        <span class="plan-text">Executor + Validator renovation loop closes</span>
+      </div>
+
+      <div class="plan-row">
+        <span class="time-chip">SUN 06:00</span>
+        <span class="plan-text">End-to-end demo passes on real repositories</span>
+      </div>
+
+      <div class="plan-row">
+        <span class="time-chip buffer">SUN 12:00</span>
+        <span class="plan-text">Video, deck and submission — 3-hour buffer</span>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

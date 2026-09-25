@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 10 — Live Demo Flow</title>
+<link rel="stylesheet" href="global.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  * { box-sizing: border-box; }
+  .beat-num {
+    font-family: var(--font-num);
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 0.95;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+  .beat-body {
+    margin: 0;
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: var(--muted-2);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div style="position:absolute; inset:0; display:flex; flex-direction:column; padding:62px 72px 52px;">
+
+    <!-- Header -->
+    <div class="kicker">LIVE DEMO</div>
+    <h1 style="margin:14px 0 0; font-family:var(--font-heading); font-size:var(--fs-h1); font-weight:800; letter-spacing:-0.015em; line-height:1.1; color:var(--ink);">
+      What you are about to see.
+    </h1>
+
+    <!-- Three-beat row -->
+    <div style="flex:1; display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:42px; min-height:0;">
+
+      <article class="card" style="padding:30px 30px 28px; display:flex; flex-direction:column;">
+        <div class="beat-num">1</div>
+        <div style="height:1px; background:var(--line); margin:24px 0 20px;" data-decor aria-hidden="true"></div>
+        <p class="beat-body">Paste a real GitHub URL — the Inspector audits it live; the activity feed and risk heatmap render as agents work.</p>
+      </article>
+
+      <article class="card" style="padding:30px 30px 28px; display:flex; flex-direction:column;">
+        <div class="beat-num">2</div>
+        <div style="height:1px; background:var(--line); margin:24px 0 20px;" data-decor aria-hidden="true"></div>
+        <p class="beat-body">The Architect proposes the plan — we approve a task with one click.</p>
+      </article>
+
+      <article class="card" style="padding:30px 30px 28px; display:flex; flex-direction:column;">
+        <div class="beat-num">3</div>
+        <div style="height:1px; background:var(--line); margin:24px 0 20px;" data-decor aria-hidden="true"></div>
+        <p class="beat-body">The Executor lands the fix — the health score climbs on screen, in real time.</p>
+      </article>
+
+    </div>
+
+    <!-- Footer line -->
+    <div style="margin-top:28px; border-top:1px solid var(--line); padding-top:18px; text-align:center;">
+      <p style="margin:0; font-size:var(--fs-small); color:var(--muted-2);">Every recommendation is traceable to specific code evidence.</p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

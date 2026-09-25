@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 12 — Closing</title>
+<link rel="stylesheet" href="global.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  * { box-sizing: border-box; }
+  .hero {
+    font-family: var(--font-heading);
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin: 0;
+  }
+  .meta-item {
+    font-family: var(--font-num);
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--muted-2);
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <!-- Thin inset frame, mirrors cover -->
+  <div class="frame-inset" data-decor aria-hidden="true"></div>
+
+  <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:72px 90px 96px;">
+
+    <!-- Accent rule above hero (cover bookend) -->
+    <div class="accent-rule" style="width:56px; margin-bottom:36px;" data-decor aria-hidden="true"></div>
+
+    <!-- Hero -->
+    <h1 class="hero">
+      RepoRevive.<br>
+      Legacy code, <span style="color:var(--accent);">revived.</span>
+    </h1>
+
+    <!-- Sub -->
+    <p style="margin:28px 0 0; font-size:16px; line-height:1.6; color:var(--muted-2); max-width:640px;">
+      Built with IBM Bob 2.0 at the lablab.ai Bob 2.0 Hackathon — September 2026.
+    </p>
+
+    <!-- Meta row: two items separated by a hairline -->
+    <div style="margin-top:46px; display:flex; align-items:center; gap:26px;">
+      <span class="meta-item">PUBLIC REPO — SEE PER-MEMBER BOB SESSION SCREENSHOTS</span>
+      <span style="width:1px; height:16px; background:var(--line); flex:0 0 auto;" data-decor aria-hidden="true"></span>
+      <span class="meta-item">DEMO — LINK IN SUBMISSION</span>
+    </div>
+
+  </div>
+
+  <!-- Bottom thanks line -->
+  <div style="position:absolute; left:0; right:0; bottom:54px; text-align:center;">
+    <p style="margin:0; font-size:var(--fs-small); color:var(--muted-2);">Team RepoRevive — four builders, forty-eight hours.</p>
+  </div>
+</div>
+</body>
+</html>

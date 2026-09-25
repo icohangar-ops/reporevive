@@ -1,0 +1,27 @@
+# .bobignore — excluded from Bob session context and from the public repo
+# Keeps credentials out per hackathon submission rules.
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.key
+secrets/
+credentials*
+ibm-cloud-*.json
+**/apikey*
+
+# Dependencies & build artifacts
+node_modules/
+.next/
+dist/
+build/
+coverage/
+
+# Bob session working artifacts
+bob-cache/
+.bob/tmp/
+
+# OS noise
+.DS_Store
+Thumbs.db

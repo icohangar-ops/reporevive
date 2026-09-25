@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phase 3 — Guided Renovation</title>
+<link rel="stylesheet" href="global.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  body { margin: 0; background: var(--bg); }
+  .headline {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h1);
+    font-weight: 800;
+    line-height: 1.14;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  .score-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .score-num {
+    font-family: var(--font-num);
+    font-size: var(--fs-h1);
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .arrow-icon {
+    font-family: 'Material Icons';
+    font-size: 26px;
+    color: var(--muted);
+    flex: none;
+  }
+  .chip-mono {
+    font-family: var(--font-num);
+    font-size: var(--fs-micro);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="h-full w-full flex flex-col" style="padding: 64px;">
+
+    <!-- Header -->
+    <div>
+      <div class="kicker">PHASE 3 · GUIDED RENOVATION</div>
+      <h1 class="headline" style="margin: 12px 0 0;">Watch the score climb with every verified fix.</h1>
+      <p style="max-width: 780px; margin: 14px 0 0; font-size: var(--fs-body); line-height: 1.6; color: var(--muted-2);">
+        The Executor lands one task at a time, running builds and tests through its shell. The Validator reviews each diff before commit, and the health score recomputes after every merge — progress you can measure, not guess.
+      </p>
+    </div>
+
+    <!-- Progression strip: 58 → 64 → 71 → 78 → 85 -->
+    <div class="flex-1 flex items-center justify-center" style="gap: 12px;">
+      <div class="score-card" style="width: 150px; height: 132px; transform: translateY(36px);">
+        <span class="score-num">58</span>
+      </div>
+      <span class="material-icons arrow-icon" aria-hidden="true">arrow_forward</span>
+      <div class="score-card" style="width: 150px; height: 132px; transform: translateY(27px);">
+        <span class="score-num">64</span>
+      </div>
+      <span class="material-icons arrow-icon" aria-hidden="true">arrow_forward</span>
+      <div class="score-card" style="width: 150px; height: 132px; transform: translateY(18px);">
+        <span class="score-num">71</span>
+      </div>
+      <span class="material-icons arrow-icon" aria-hidden="true">arrow_forward</span>
+      <div class="score-card" style="width: 150px; height: 132px; transform: translateY(9px);">
+        <span class="score-num">78</span>
+      </div>
+      <span class="material-icons arrow-icon" aria-hidden="true">arrow_forward</span>
+      <div class="score-card" style="width: 172px; height: 148px; border-top: 3px solid var(--accent); transform: translateY(0);">
+        <span class="score-num" style="font-size: var(--fs-display); color: var(--accent);">85</span>
+      </div>
+    </div>
+
+    <!-- Caption -->
+    <div class="text-center" style="font-size: var(--fs-small); color: var(--muted-2);">
+      Health score across five merged tasks
+    </div>
+
+    <!-- Bottom chips -->
+    <div class="flex justify-center" style="gap: 12px; margin-top: 20px;">
+      <span class="chip chip-mono" style="color: var(--muted-2); padding: 7px 16px;">EXECUTOR</span>
+      <span class="chip chip-mono" style="color: var(--muted-2); padding: 7px 16px;">VALIDATOR</span>
+      <span class="chip chip-mono" style="color: var(--muted-2); padding: 7px 16px;">LIVE ACTIVITY FEED</span>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
