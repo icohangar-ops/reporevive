@@ -5,6 +5,8 @@
 
 Paste a GitHub URL and RepoRevive runs three orchestrated phases on your repository — **Audit → Plan → Renovate** — while a transparent 0–100 health score climbs live on the dashboard.
 
+> **Live demo:** https://reporevive-sable.vercel.app — click **Run RepoRevive** and watch the full Audit → Plan → Renovate pipeline execute in ~13 seconds: live agent console, CVE lookups, health scoring (42 → 89), findings, renovation plan and before/after diffs.
+
 ## The problem
 
 Most of the world's software is legacy: outdated dependencies, hidden CVEs, near-zero test coverage, and architecture that lives only in the heads of developers who left. Static-analysis tools flood teams with warnings — they can't prioritize, can't explain, and can't fix anything. Onboarding takes weeks; refactoring is a gamble because nobody knows which files are safe to touch.
@@ -45,6 +47,7 @@ watsonx.ai / watsonx Orchestrate: not used in this build — all reasoning and a
 
 | Asset | Path |
 |-------|------|
+| **Live demo app** | **https://reporevive-sable.vercel.app** (hosted on Vercel) |
 | Cover image (16:9) | [`media/cover/RepoRevive_Cover_16x9.png`](media/cover/RepoRevive_Cover_16x9.png) |
 | Pitch deck (12 slides, PDF) | [`media/deck/RepoRevive_Pitch_Deck.pdf`](media/deck/RepoRevive_Pitch_Deck.pdf) |
 | Video presentation (2:51, 1080p) | [`media/video/RepoRevive_Video_Presentation.mp4`](media/video/RepoRevive_Video_Presentation.mp4) |
